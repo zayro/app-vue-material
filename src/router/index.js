@@ -1,14 +1,32 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
+import Login from '../views/Login.vue'
+import RecoveryPass from '../views/RecoveryPass.vue'
+import NetworkView from '../views/Network.vue'
 
 Vue.use(VueRouter)
 
   const routes = [
   {
     path: '/',
+    name: 'Login',
+    component: Login
+  },
+  {
+    path: '/Recovery',
+    name: 'Recovery',
+    component: RecoveryPass
+  },
+  {
+    path: '/home',
     name: 'Home',
     component: Home
+  },
+  {
+    path: '/network',
+    name: 'Network',
+    component: NetworkView
   },
   {
     path: '/about',
